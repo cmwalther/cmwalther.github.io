@@ -5,7 +5,8 @@ body {
 
 
 #introduction {
-  margin-bottom: 100px:
+  width: 820px;
+  margin: 100px auto:
   padding: 0px 300px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBT…58MoETuC8L/0s+iAfI8wU/cPtqAnI8sDt5DftZ7QK5iv0PE8lbAk7w/dPXAAAAAElFTkSuQmCC);
   background-size: auto;
