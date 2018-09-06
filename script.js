@@ -21,11 +21,12 @@ $( document ).ready(function() {
        3 : "happy"
       },
       "sources" : [
-       [2, "Your customer service sucks"]
-       [2, "You suck"]
-       [1, "That's unfortunate"]
+       [2, "Your customer service sucks"],
+       [2, "You suck"],
+       [1, "That's unfortunate"],
        [3, "Wow so exciting"]
       ]
     }
-  });
-}
+  }
+});
+
