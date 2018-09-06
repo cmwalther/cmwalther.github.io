@@ -59,6 +59,12 @@ body {
   margin: 5px;
 }
 
+.button:hover, #task_overview div:hover {
+  background-color: white;
+  border: 1px solid #4a90e2;
+  color: #4a90e2;
+}
+
 #task_container, #task_results {
   display: none;
 }
