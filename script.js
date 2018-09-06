@@ -52,7 +52,6 @@ function evaluate_game(task_name) {
 }
   
 function evaluate_answer(task_name, answer_key){
-  alert("start of evaluate answer");
   // check if answer key matches the current question (source_counter)
   if(tasks[task_name]["sources"][counter][0] == answer_key){
     correct_answer_count += 1;
@@ -69,16 +68,9 @@ function evaluate_answer(task_name, answer_key){
     console.log("false");
   }
 }
-  
-function button_handler(task_name, answer_key){
-  alert("start button handler");
-  evaluate_answer(task_name, answer_key);
-  counter += 1;
-  set_game(task_name);
-}
+
 
 function set_game(task_name){
-  alert("start of set game");
   if(counter < tasks[task_name]["sources"].length){ 
   
     // Set source
@@ -94,7 +86,6 @@ function set_game(task_name){
        new_button.innerHTML = tasks[task_name]["answer_options"][key];
        new_button.classList.add("button");
        new_button.id = key;
-       alert("before adding button onclick");
        new_button.addEventListener('click', function(){
           evaluate_answer(task_name, new_button.id);
           counter += 1;
