@@ -22,13 +22,21 @@
 
 $( document ).ready(function() {
   
-    $("#sentiment_analysis").click(function() {
+  $("#sentiment_analysis").click(function() {
       $("#task_container").show();
       $("#task_overview").hide();
       
       // Initialize sentiment quiz
       $("#task_instructions").text(tasks["sentiment_analysis"]["instruction"]);      
       set_game("sentiment_analysis", counter);
+      
+  });
+  
+  $("#reset").(function() {
+      counter = 0;
+      correct_answer_count = 0;
+      $("#task_results").hide();
+      $("#task_overview").show();
       
   });
   
@@ -67,6 +75,7 @@ function set_game(task_name, source_counter){
         // append a button       
        var new_button = document.createElement("div");
        new_button.innerHTML = tasks[task_name]["answer_options"][key];
+       new_button.classlist.add("button");
        new_button.addEventListener('click', function(){
           evaluate_answer(task_name, source_counter, key);
           set_game(task_name, source_counter + 1);
