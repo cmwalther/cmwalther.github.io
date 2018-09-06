@@ -82,7 +82,10 @@ body {
   display: none;
 }
 
-  
+#task_instructions {
+ color: #4a90e2;
+ font-weight: lighter;
+}
 
 #task_source {
   font-size: 16pt;
