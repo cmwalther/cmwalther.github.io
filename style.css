@@ -11,6 +11,13 @@
   background-color: light-blue;
 }
 
+#task_overview div {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+}
+
 #task_container {
   display: none;
 }
