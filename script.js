@@ -30,7 +30,17 @@ $( document ).ready(function() {
   });
 
 function set_game(task_name, source_counter){
-  $("#task_source").text(tasks[task_name]["sources"][source_counter][1]); 
+  // Set source
+  $("#task_source").text(tasks[task_name]["sources"][source_counter][1]);
+  $("#task_target").empty();
+  
+  // Set targets
+  for(var key in tasks[task_name]["answer_options"]){
+    if(tasks[task_name]["answer_options"].hasOwnProperty(key)){
+      // append a button 
+      $("#task_target").append($("button").text(tasks[task_name]["answer_options"][key]);
+    }
+  }
 }
 
 
