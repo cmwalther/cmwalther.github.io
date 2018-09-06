@@ -38,7 +38,7 @@ function set_game(task_name, source_counter){
   for(var key in tasks[task_name]["answer_options"]){
     if(tasks[task_name]["answer_options"].hasOwnProperty(key)){
       // append a button 
-      $("#task_target").append($("button").text(tasks[task_name]["answer_options"][key]);
+      $("#task_target").append($("button").text(tasks[task_name]["answer_options"][key]));
     }
   }
 }
