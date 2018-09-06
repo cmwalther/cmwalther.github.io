@@ -61,6 +61,10 @@ function evaluate_answer(task_name, source_counter, answer_key){
     console.log(answer_key);
     console.log("correct");
   } else {
+    console.log("correct key for this source: ");
+    console.log(tasks[task_name]["sources"][source_counter][0])
+    console.log("selected key: ");
+    console.log(answer_key);
     console.log("false");
   }
 }
