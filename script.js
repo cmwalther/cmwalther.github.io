@@ -40,11 +40,11 @@ function set_game(task_name, source_counter){
       // append a button 
       alert(tasks[task_name]["answer_options"][key]);
       
-      //var new_button = document.createElement("div");
+      var new_button = document.createElement("div");
       //new_button.id = key.toString();
-      //new_button.text = tasks[task_name]["answer_options"][key];
+      new_button.innerHTML = tasks[task_name]["answer_options"][key];
       
-      $("#task_target").append("<div>test</div>");
+      $("#task_target").append(new_button);
     }
   }
 }
