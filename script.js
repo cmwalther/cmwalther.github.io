@@ -29,7 +29,7 @@ $( document ).ready(function() {
       
   });
 
-function set_game(var task_name, var source_counter){
+function set_game(task_name, source_counter){
   $("#task_source").text(tasks[task_name]["sources"][source_counter][1]; 
 }
 
