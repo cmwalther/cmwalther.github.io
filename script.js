@@ -12,8 +12,8 @@
        [1, "That's unfortunate"],
        [3, "Wow so exciting"]
       ],
-      "avg_errors" : 0.2;
-      "avg_time" : 12.8;
+      "avg_errors" : 0.2,
+      "avg_time" : 12.8,
     }
   }
   
