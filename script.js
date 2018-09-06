@@ -1,3 +1,12 @@
+
+$.("#sentiment_analysis").click(function() {
+  $.("#task_container").show();
+  $.("#task_overview").hide();
+});
+
+
+
+
 var tasks = {
   "sentiment analysis" : {
     "instruction" : "Read the text segment and pick the appropriate sentiment",
