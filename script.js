@@ -3,9 +3,9 @@ $( document ).ready(function() {
   
   alert("document loaded");
 
-  $.("#sentiment_analysis").click(function() {
-    $.("#task_container").show();
-    $.("#task_overview").hide();
+    $("#sentiment_analysis").click(function() {
+    $("#task_container").show();
+    $("#task_overview").hide();
     alert("hi");
   });
 
