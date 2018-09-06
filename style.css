@@ -5,7 +5,7 @@
 }
 
 #task_container {
-  display: hidden;
+  display: none;
 }
 
 #task_source {
