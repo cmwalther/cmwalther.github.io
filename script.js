@@ -39,7 +39,7 @@ function set_game(task_name, source_counter){
     if(tasks[task_name]["answer_options"].hasOwnProperty(key)){
       // append a button 
       alert(tasks[task_name]["answer_options"][key]);
-      $("#task_target").append($("button").val(tasks[task_name]["answer_options"][key]));
+      $("#task_target").append($("div").text(tasks[task_name]["answer_options"][key]));
     }
   }
 }
