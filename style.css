@@ -16,7 +16,7 @@ body {
 }
 
 #main {
-  width: 800px;
+  width: 820px;
   padding: 50px;
   height: 500px;
   margin: 0 auto; 
@@ -39,6 +39,7 @@ body {
   background-color: #4a90e2;
   color: white;
   font-weight: bold;
+  font-size: 14pt;
   text-align: center;
   vertical-align: middle;
   line-height: 200px;
