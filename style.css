@@ -16,6 +16,10 @@
   height: 200px;
   background-color: blue;
   color: white;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
 }
 
 #task_container {
