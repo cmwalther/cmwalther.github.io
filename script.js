@@ -52,6 +52,7 @@ function evaluate_game(task_name) {
 }
   
 function evaluate_answer(task_name, answer_key){
+  alert("start of evaluate answer");
   // check if answer key matches the current question (source_counter)
   if(tasks[task_name]["sources"][counter][0] == answer_key){
     correct_answer_count += 1;
@@ -76,6 +77,7 @@ function button_handler(task_name, answer_key){
 }
 
 function set_game(task_name){
+  alert("start of set game");
   if(counter < tasks[task_name]["sources"].length){ 
   
     // Set source
@@ -90,6 +92,7 @@ function set_game(task_name){
        var new_button = document.createElement("div");
        new_button.innerHTML = tasks[task_name]["answer_options"][key];
        new_button.classList.add("button");
+       alert("before adding button onclick");
        new_button.onclick = button_handler(task_name, key);
       
         $("#task_target").append(new_button);
