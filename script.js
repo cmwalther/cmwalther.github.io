@@ -75,7 +75,7 @@ function set_game(task_name, source_counter){
         // append a button       
        var new_button = document.createElement("div");
        new_button.innerHTML = tasks[task_name]["answer_options"][key];
-       new_button.classlist.add("button");
+       new_button.classList.add("button");
        new_button.addEventListener('click', function(){
           evaluate_answer(task_name, source_counter, key);
           source_counter += 1;
