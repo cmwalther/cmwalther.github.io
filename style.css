@@ -65,6 +65,7 @@ body {
   background-color: white;
   border: 1px solid #4a90e2;
   color: #4a90e2;
+  cursor: pointer;
 }
 
 #task_container, #task_results {
