@@ -1,5 +1,5 @@
 body {
-  font-family: "noto_sansregular";
+  font-family: "helvetica";
   color: #343a40;
 }
 
@@ -32,7 +32,7 @@ body {
 #source_target_wrapper {
   display: grid;
   grid-template-colums: 400px 200px;
-  grid-gap: 50px;
+  grid-gap: 50px 0px;
 }
 
 #task_overview div {
@@ -80,7 +80,7 @@ body {
 
 #task_source {
   font-size: 16pt;
-  width: 400px;
+  width: 380px;
   height: 300px;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
