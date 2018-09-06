@@ -1,13 +1,13 @@
-#main, #introduction {
-  width: 800px;
-  margin: 0 auto; 
-}
-
 #introduction {
   margin-bottom: 100px:
+  padding: 0px 300px;
+  background-color: #333333;
+  color: white;
 }
 
 #main {
+  width: 800px;
+  margin: 0 auto; 
   background-color: light-blue;
 }
 
