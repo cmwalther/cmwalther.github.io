@@ -93,8 +93,13 @@ function set_game(task_name){
        var new_button = document.createElement("div");
        new_button.innerHTML = tasks[task_name]["answer_options"][key];
        new_button.classList.add("button");
+       new_button.id = key;
        alert("before adding button onclick");
-       new_button.onclick = button_handler(task_name, key);
+       new_button.addEventListener('click', function(){
+          evaluate_answer(task_name, new_button.id);
+          counter += 1;
+          set_game(task_name);
+       });
       
         $("#task_target").append(new_button);
        }
