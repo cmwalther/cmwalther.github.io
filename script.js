@@ -1,6 +1,6 @@
   var tasks = {
     "sentiment_analysis" : {
-     "instruction" : "Read the text segment and pick the appropriate sentiment",
+     "instruction" : "Read the text segment and pick the appropriate sentiment!",
      "answer_options" : {
         1 : "sad",
        2 : "angry",
@@ -16,7 +16,7 @@
       "avg_time" : 12.8,
     },
     "content_categorization" : {
-     "instruction" : "Read the text segment and pick the appropriate category",
+     "instruction" : "Read the text segment and pick the appropriate category!",
      "answer_options" : {
         1 : "finance",
        2 : "legal",
