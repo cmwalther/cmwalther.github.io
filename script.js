@@ -76,7 +76,7 @@ function button_handler(task_name, answer_key){
 }
 
 function set_game(task_name){
-  if(source_counter < tasks[task_name]["sources"].length){ 
+  if(counter < tasks[task_name]["sources"].length){ 
   
     // Set source
     $("#task_source").text(tasks[task_name]["sources"][counter][1]);
