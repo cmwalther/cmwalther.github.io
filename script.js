@@ -55,9 +55,13 @@ function evaluate_answer(task_name, source_counter, answer_key){
   // check if answer key matches the current question (source_counter)
   if(tasks[task_name]["sources"][source_counter][0] == answer_key){
     correct_answer_count += 1;
-    alert("correct");
+    console.log("correct key for this source: ");
+    console.log(tasks[task_name]["sources"][source_counter][0])
+    console.log("selected key: ");
+    console.log(answer_key);
+    console.log("correct");
   } else {
-    alert("false");
+    console.log("false");
   }
 }
 
