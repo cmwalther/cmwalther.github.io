@@ -71,6 +71,7 @@ function evaluate_answer(task_name, answer_key){
 }
   
 function button_handler(task_name, answer_key){
+  alert("start button handler");
   evaluate_answer(task_name, answer_key);
   counter += 1;
   set_game(task_name);
