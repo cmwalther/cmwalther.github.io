@@ -1,10 +1,29 @@
 <!DOCTYPE html>
   <head>
     <title>One day clickworker - Experience microtasking</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    
     <script src="script.js"></script>
+    
     <h1>There are 2,000,000 clickworkers in the world</h1>
+    
+    <div id="task_container">
+      <h2 id="task_instructions">Read the segment and pick the appropriate sentiment</h2>
+      <p id="task_counter">1/10</p>
+      <p id="task_source">This is an example sentence for the task input</p>
+      <div id="task_target">
+        <button>Answer 1</button>
+        <button>Answer 2</button>
+        <button>Answer 3</button>
+        <button>Answer 4</button>
+      </div>
+    </div>
   </body>
 </html>
 
