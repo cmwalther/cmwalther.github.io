@@ -78,7 +78,8 @@ function set_game(task_name, source_counter){
        new_button.classlist.add("button");
        new_button.addEventListener('click', function(){
           evaluate_answer(task_name, source_counter, key);
-          set_game(task_name, source_counter + 1);
+          source_counter += 1;
+          set_game(task_name, source_counter);
        });
       
         $("#task_target").append(new_button);
