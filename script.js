@@ -32,7 +32,7 @@ $( document ).ready(function() {
   
 function evaluate_answer(task_name, source_counter, answer_key){
   // check if answer key matches the current question (source_counter)
-  if(tasks[task_name]["sources"][source_counter] == answer_key){
+  if(tasks[task_name]["sources"][source_counter][0] == answer_key){
     correct_answer_count += 1;
     alert("correct");
   } else {
@@ -48,9 +48,8 @@ function set_game(task_name, source_counter){
   // Set targets
   for(var key in tasks[task_name]["answer_options"]){
     if(tasks[task_name]["answer_options"].hasOwnProperty(key)){
-      // append a button 
-      alert(tasks[task_name]["answer_options"][key]);
-      
+     
+      // append a button       
       var new_button = document.createElement("div");
       new_button.innerHTML = tasks[task_name]["answer_options"][key];
       new_button.addEventListener('click', function(){
