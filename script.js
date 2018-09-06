@@ -19,7 +19,7 @@ $( document ).ready(function() {
         1 : "sad",
        2 : "angry",
        3 : "happy"
-      }
+      },
       "sources" : [
        [2, "Your customer service sucks"]
        [2, "You suck"]
