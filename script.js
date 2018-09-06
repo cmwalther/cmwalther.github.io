@@ -11,7 +11,9 @@
        [2, "You suck"],
        [1, "That's unfortunate"],
        [3, "Wow so exciting"]
-      ]
+      ],
+      "avg_errors" : 0.2;
+      "avg_time" : 12.8;
     }
   }
   
@@ -30,6 +32,17 @@ $( document ).ready(function() {
       
   });
   
+function evaluate_game(task_name) {
+  $("#task_container").hide();
+  $("#task_results").show();
+  
+  $("#task_results_errors").text(tasks[task_name]["sources"].length - correct_answer_count);
+  $("#task_results_time").text(15);
+  $("#task_results_avg_errors").text(tasks[task_name]["avg_errors"]);
+  $("#task_results_avg_time").text(tasks[task_name]["avg_time"]);
+
+}
+  
 function evaluate_answer(task_name, source_counter, answer_key){
   // check if answer key matches the current question (source_counter)
   if(tasks[task_name]["sources"][source_counter][0] == answer_key){
@@ -41,23 +54,28 @@ function evaluate_answer(task_name, source_counter, answer_key){
 }
 
 function set_game(task_name, source_counter){
-  // Set source
-  $("#task_source").text(tasks[task_name]["sources"][source_counter][1]);
-  $("#task_target").empty();
+  if(source_counter < tasks[task_name]["sources"].length){ 
   
-  // Set targets
-  for(var key in tasks[task_name]["answer_options"]){
-    if(tasks[task_name]["answer_options"].hasOwnProperty(key)){
+    // Set source
+    $("#task_source").text(tasks[task_name]["sources"][source_counter][1]);
+    $("#task_target").empty();
+  
+    // Set targets
+    for(var key in tasks[task_name]["answer_options"]){
+      if(tasks[task_name]["answer_options"].hasOwnProperty(key)){
      
-      // append a button       
-      var new_button = document.createElement("div");
-      new_button.innerHTML = tasks[task_name]["answer_options"][key];
-      new_button.addEventListener('click', function(){
-         evaluate_answer(task_name, source_counter, key);
-         set_game(task_name, source_counter + 1);
-      });
+        // append a button       
+       var new_button = document.createElement("div");
+       new_button.innerHTML = tasks[task_name]["answer_options"][key];
+       new_button.addEventListener('click', function(){
+          evaluate_answer(task_name, source_counter, key);
+          set_game(task_name, source_counter + 1);
+       });
       
-      $("#task_target").append(new_button);
+        $("#task_target").append(new_button);
+      }
+    } else {
+      evaluate_game(task_name);
     }
   }
 }
