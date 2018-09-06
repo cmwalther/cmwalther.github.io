@@ -16,6 +16,7 @@
   }
   
   var counter = 0;
+  var correct_answer_count = 0;
 
 $( document ).ready(function() {
   
@@ -28,6 +29,16 @@ $( document ).ready(function() {
       set_game("sentiment_analysis", counter);
       
   });
+  
+function evaluate_answer(task_name, source_counter, answer_key){
+  // check if answer key matches the current question (source_counter)
+  if(tasks[task_name]["sources"][source_counter] == answer_key){
+    correct_answer_count += 1;
+    alert("correct");
+  } else {
+    alert("false");
+  }
+}
 
 function set_game(task_name, source_counter){
   // Set source
@@ -41,8 +52,11 @@ function set_game(task_name, source_counter){
       alert(tasks[task_name]["answer_options"][key]);
       
       var new_button = document.createElement("div");
-      //new_button.id = key.toString();
       new_button.innerHTML = tasks[task_name]["answer_options"][key];
+      new_button.addEventListener('click', function(){
+         evaluate_answer(task_name, source_counter, key);
+         set_game(task_name, source_counter + 1);
+      });
       
       $("#task_target").append(new_button);
     }
