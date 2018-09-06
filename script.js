@@ -1,6 +1,6 @@
 var tasks = {
   "sentiment analysis" : {
-    "instruction : "Read the text segment and pick the appropriate sentiment",
+    "instruction" : "Read the text segment and pick the appropriate sentiment",
     "answer_options" : {
       1 : "sad",
       2 : "angry",
