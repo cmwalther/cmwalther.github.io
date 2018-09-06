@@ -73,10 +73,10 @@ function set_game(task_name, source_counter){
        });
       
         $("#task_target").append(new_button);
-      }
-    } else {
-      evaluate_game(task_name);
-    }
+       }
+     } 
+  } else {
+    evaluate_game(task_name);
   }
 }
 
