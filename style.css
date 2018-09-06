@@ -30,7 +30,7 @@ body {
 #task_overview {
   display: grid;
   grid-template-columns: 300px 300px 300px;
-  grid-gap: 10px;
+  grid-gap: 60px 10px;
 }
 
 #task_overview div {
