@@ -90,7 +90,7 @@ function set_game(task_name, source_counter){
             source_counter += 1;
             set_game(task_name, source_counter);
           };
-       });
+       })(task_name, source_counter, key);
       
         $("#task_target").append(new_button);
        }
