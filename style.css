@@ -90,6 +90,10 @@ body {
   line-height: 300px;
 }
 
+#task_target {
+  width: 200px;
+}
+
 #reset {
   color: #4a90e2;
 }
