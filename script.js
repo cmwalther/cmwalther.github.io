@@ -14,7 +14,25 @@
       ],
       "avg_errors" : 0.2,
       "avg_time" : 12.8,
-    }
+    },
+    "content_categorization" : {
+     "instruction" : "Read the text segment and pick the appropriate category",
+     "answer_options" : {
+        1 : "finance",
+       2 : "legal",
+       3 : "entertainment",
+       4 : "technology",
+       5 : "fiction"
+      },
+      "sources" : [
+       [2, "Your customer service sucks"],
+       [2, "You suck"],
+       [1, "That's unfortunate"],
+       [3, "Wow so exciting"]
+      ],
+      "avg_errors" : 0.2,
+      "avg_time" : 12.8,
+    },
   }
   
   var counter = 0;
@@ -29,6 +47,16 @@ $( document ).ready(function() {
       // Initialize sentiment quiz
       $("#task_instructions").text(tasks["sentiment_analysis"]["instruction"]);      
       set_game("sentiment_analysis", counter);
+      
+  });
+  
+   $("#content_categorization").click(function() {
+      $("#task_container").show();
+      $("#task_overview").hide();
+      
+      // Initialize sentiment quiz
+      $("#task_instructions").text(tasks["content_categorization"]["instruction"]);      
+      set_game("content_categorization", counter);
       
   });
   
