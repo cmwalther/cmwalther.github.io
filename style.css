@@ -11,6 +11,12 @@ body {
   height: 100%;
 }
 
+#sub_head {
+  color: #555;
+  font-weight: lighter;
+  font-size: 20pt;
+}
+
 #main {
   width: 820px;
   padding: 50px;
