@@ -51,29 +51,35 @@ function evaluate_game(task_name) {
 
 }
   
-function evaluate_answer(task_name, source_counter, answer_key){
+function evaluate_answer(task_name, answer_key){
   // check if answer key matches the current question (source_counter)
-  if(tasks[task_name]["sources"][source_counter][0] == answer_key){
+  if(tasks[task_name]["sources"][counter][0] == answer_key){
     correct_answer_count += 1;
     console.log("correct key for this source: ");
-    console.log(tasks[task_name]["sources"][source_counter][0])
+    console.log(tasks[task_name]["sources"][counter][0])
     console.log("selected key: ");
     console.log(answer_key);
     console.log("correct");
   } else {
     console.log("correct key for this source: ");
-    console.log(tasks[task_name]["sources"][source_counter][0])
+    console.log(tasks[task_name]["sources"][counter][0])
     console.log("selected key: ");
     console.log(answer_key);
     console.log("false");
   }
 }
+  
+function button_handler(task_name, answer_key){
+  evaluate_answer(task_name, answer_key);
+  counter += 1;
+  set_game(task_name);
+}
 
-function set_game(task_name, source_counter){
+function set_game(task_name){
   if(source_counter < tasks[task_name]["sources"].length){ 
   
     // Set source
-    $("#task_source").text(tasks[task_name]["sources"][source_counter][1]);
+    $("#task_source").text(tasks[task_name]["sources"][counter][1]);
     $("#task_target").empty();
   
     // Set targets
@@ -84,13 +90,7 @@ function set_game(task_name, source_counter){
        var new_button = document.createElement("div");
        new_button.innerHTML = tasks[task_name]["answer_options"][key];
        new_button.classList.add("button");
-       new_button.addEventListener('click', function(task_name, source_counter, key){
-          return function() {
-            evaluate_answer(task_name, source_counter, key);
-            source_counter += 1;
-            set_game(task_name, source_counter);
-          };
-       })(task_name, source_counter, key);
+       new_button.onclick = button_handler(task_name, key);
       
         $("#task_target").append(new_button);
        }
