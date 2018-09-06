@@ -2,6 +2,7 @@
 $.("#sentiment_analysis").click(function() {
   $.("#task_container").show();
   $.("#task_overview").hide();
+  alert("hi");
 });
 
 
