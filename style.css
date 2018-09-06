@@ -6,8 +6,13 @@ html {
 #introduction {
   margin-bottom: 100px:
   padding: 0px 300px;
-  background-color: #333333;
   color: white;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBT…58MoETuC8L/0s+iAfI8wU/cPtqAnI8sDt5DftZ7QK5iv0PE8lbAk7w/dPXAAAAAElFTkSuQmCC);
+  background-size: auto;
+  background-position: 50%;
+  background-repeat: repeat;
+  padding: 48px 15px 26px;
+  height: 100%;
 }
 
 #main {
