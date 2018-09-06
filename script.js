@@ -32,7 +32,7 @@ $( document ).ready(function() {
       
   });
   
-  $("#reset").(function() {
+  $("#reset").click(function() {
       counter = 0;
       correct_answer_count = 0;
       $("#task_results").hide();
