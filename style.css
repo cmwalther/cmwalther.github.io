@@ -44,7 +44,7 @@ body {
 
 #footer {
   display: grid;
-  grid-template-columns: 150px 800px;
+  grid-template-columns: 220px 800px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -54,6 +54,10 @@ body {
 #footer a, #footer a:visited {
   color: #4a90e2;
   underline: none;
+}
+
+#footer_text {
+  padding-top: 20px;
 }
 
 
