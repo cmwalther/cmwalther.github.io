@@ -44,7 +44,7 @@ body {
 
 #footer {
   display: grid;
-  grid-template-columns: 220px 800px;
+  grid-template-columns: 165px 800px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -57,8 +57,14 @@ body {
 }
 
 #footer_text {
-  padding-top: 20px;
+  padding-top: 25px;
 }
+
+#footer img {
+  width: 130px;
+  margin: 15px;
+}
+
 
 
 #task_overview div {
