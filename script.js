@@ -79,7 +79,7 @@ function  initialize_second_counter(){
   
 function update_seconds(){
   seconds += 0.1;
-  $("#seconds").text(seconds);
+  $("#seconds").text(seconds.toFixed(1));
 }
   
   
