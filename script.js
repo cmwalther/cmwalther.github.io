@@ -74,6 +74,7 @@ $( document ).ready(function() {
   });
   
 function  initialize_second_counter(){
+  seconds = 0;
   var cancel = setInterval(update_seconds, 100);
 }
   
