@@ -47,6 +47,12 @@ body {
   grid-template-columns: 150px 800px;
 }
 
+#footer a, #footer a:visited {
+  color: #4a90e2;
+  underline: none;
+}
+
+
 #task_overview div {
   width: 200px;
   height: 200px;
