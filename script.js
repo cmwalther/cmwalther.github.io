@@ -104,6 +104,8 @@ function set_game(task_name){
     // Set source
     $("#task_source").text(tasks[task_name]["sources"][counter][1]);
     $("#task_target").empty();
+    $("#current_counter").text(counter);
+    $("#total_counter").text(tasks[task_name]["sources"].length);
   
     // Set targets
     for(var key in tasks[task_name]["answer_options"]){
