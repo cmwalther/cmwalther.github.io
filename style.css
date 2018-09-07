@@ -106,6 +106,7 @@ body {
 #counter {
   width: 820px;
   text-align: right;
+  font-weight: bold;
 }
 
 #task_target {
