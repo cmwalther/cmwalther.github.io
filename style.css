@@ -88,7 +88,7 @@ body {
  font-weight: lighter;
 }
 
-#task_source {
+#task_source_wrapper {
   font-size: 15pt;
   width: 380px;
   height: 300px;
@@ -96,9 +96,11 @@ body {
   border-radius: 3px;
   background-color: white;
   text-align: center;
-  vertical-align: middle;
-  line-height: 20px;
-  padding: 20px 30px;
+}
+
+#task_source {
+  margin: auto;
+  height: 200px;
 }
 
 #counter {
