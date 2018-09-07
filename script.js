@@ -88,7 +88,7 @@ function evaluate_game(task_name) {
   $("#task_results").show();
   
   $("#task_results_errors").text(tasks[task_name]["sources"].length - correct_answer_count);
-  $("#task_results_time").text(15);
+  $("#task_results_time").text(seconds);
   $("#task_results_avg_errors").text(tasks[task_name]["avg_errors"]);
   $("#task_results_avg_time").text(tasks[task_name]["avg_time"]);
 
