@@ -99,9 +99,15 @@ body {
   line-height: 300px;
 }
 
+#counter {
+  width: 300%;
+  text-align: right;
+}
+
 #task_target {
   width: 200px;
   padding: 40px 130px;
+  color: #4a90e2;
 }
 
 #reset {
