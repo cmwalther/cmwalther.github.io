@@ -97,7 +97,8 @@ body {
   background-color: white;
   text-align: center;
   vertical-align: middle;
-  line-height: 300px;
+  line-height: 20px;
+  padding: 20px 30px;
 }
 
 #counter {
