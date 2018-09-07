@@ -37,6 +37,7 @@
   
   var counter = 0;
   var correct_answer_count = 0;
+  var seconds = 0;
 
 $( document ).ready(function() {
   
@@ -47,6 +48,8 @@ $( document ).ready(function() {
       // Initialize sentiment quiz
       $("#task_instructions").text(tasks["sentiment_analysis"]["instruction"]);      
       set_game("sentiment_analysis", counter);
+    
+      initialize_second_counter();
       
   });
   
@@ -57,6 +60,8 @@ $( document ).ready(function() {
       // Initialize sentiment quiz
       $("#task_instructions").text(tasks["content_categorization"]["instruction"]);      
       set_game("content_categorization", counter);
+     
+       initialize_second_counter();
       
   });
   
@@ -67,6 +72,16 @@ $( document ).ready(function() {
       $("#task_overview").show();
       
   });
+  
+function  initialize_second_counter(){
+  var cancel = setInterval(update_seconds, 100);
+}
+  
+function update_seconds(){
+  seconds += 0.1;
+  $("#seconds").text(seconds);
+}
+  
   
 function evaluate_game(task_name) {
   $("#task_container").hide();
