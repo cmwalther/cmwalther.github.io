@@ -7,10 +7,10 @@
        3 : "happy"
       },
       "sources" : [
-       [2, "Your customer service sucks"],
-       [2, "You suck"],
-       [1, "That's unfortunate"],
-       [3, "Wow so exciting"]
+       [1, "So I think the Lil Tiger has possibly gotten me sick as well even though I have been taking my vitamins I thought I would be safe. My throat is starting to hurt this isn't going to be good"],
+       [3, "Jumping on the band wagon for pax west EXCLUSIVE spray giveaway! Like, retweet and Follow to enter! Winners will be drawn on Monday the 10th live on stream"],
+       [1, "On a non universe note, my best friend just got engaged and I’m SO happy for her but also crying inside cause there goes another friend"],
+       [2, "How often can you fail without apologies, employ the worst attitudes and morals, offer the least amount of miles per dollar, most pricey awards redemption and never suffer consequences."]
       ],
       "avg_errors" : 0.2,
       "avg_time" : 12.8,
@@ -25,10 +25,10 @@
        5 : "fiction"
       },
       "sources" : [
-       [2, "Your customer service sucks"],
-       [2, "You suck"],
-       [1, "That's unfortunate"],
-       [3, "Wow so exciting"]
+       [2, "For anyone struggling with Mapp v. Ohio: There once was a woman named Dolly - Who thought no warrant was folly"],
+       [2, "Just read a case I am pretty sure we went over at nabita last year"],
+       [1, "This just in: The IRS just released guidance on how to handle rule changes around executive compensation deduction after TCJA."],
+       [4, "Singularity is fully Docker and OCI compatible but neither of these container formats have the ability to cryptographically sign or validate the runtime container image."]
       ],
       "avg_errors" : 0.2,
       "avg_time" : 12.8,
